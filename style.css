@@ -43,7 +43,7 @@ div#current-number {
 }
 
 div#current-number span {
-    font-size: 35em;
+    font-size: 32em;
     font-family: 'Rubik Dirt', cursive;
 }
 
@@ -102,13 +102,19 @@ div#previous-numbers {
 
 @media only screen and (max-width: 730px) {
     div#current-number span {
-        font-size: 20em;
+        font-size: 18em;
     }
 }
 
 @media only screen and (max-width: 400px) {
     div#current-number span {
-        font-size: 10em;
+        font-size: 9em;
+    }
+}
+
+@media only screen and (max-height: 730px) and (orientation: landscape) {
+    div#current-number span {
+        font-size: 18em;
     }
 }
 
