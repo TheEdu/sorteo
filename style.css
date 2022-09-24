@@ -1,0 +1,119 @@
+body {
+    margin: 0px;
+    /* background-color: beige; */
+}
+
+
+body::before {    
+    content: "";
+    background-image: url('./background.jpeg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+}
+
+
+img {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    height: 5em;
+    z-index: 1;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.container {
+    border: 1px solid black;
+}
+
+div#current-number {
+    position: relative;
+    height: calc(80vh - 2px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#current-number span {
+    font-size: 35em;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+div#current-number button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+
+    font-size: 1.2em;
+
+    border-radius: 2px;
+    background-color: rgb(241, 13, 13);
+    color: azure;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+button:active {
+    transform: scale(1.05);
+}
+
+div#previous-numbers {
+    min-height: calc(20vh - 1px);
+    border-top: 0px;
+}
+
+
+div#previous-numbers {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+.number {
+    text-align: center;
+    font-size: 2em;
+    background-color: cornflowerblue;
+    min-width: 1.5em;
+    margin-right: 5px;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    z-index: 1;
+}
+
+.number:nth-child(1), .number:nth-child(2), .number:nth-child(3) {
+    background-color: orange;
+}
+
+.number:nth-child(1) {
+    font-size: 3em;
+}
+
+@media only screen and (max-width: 730px) {
+    div#current-number span {
+        font-size: 20em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    div#current-number span {
+        font-size: 10em;
+    }
+}
+
+.ajs-message {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
