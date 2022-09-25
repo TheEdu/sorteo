@@ -69,16 +69,21 @@ button:active {
 }
 
 div#previous-numbers {
+    position: relative;
     min-height: calc(20vh - 1px);
     border-top: 0px;
-}
 
-
-div#previous-numbers {
     display: flex;
     flex-flow: row wrap;
     justify-content:center;
     align-items: center;
+}
+
+span#author {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 0.7em;
 }
 
 .number {
