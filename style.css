@@ -1,21 +1,8 @@
 body {
     margin: 0px;
     /* background-color: beige; */
+    background-image: url('./img/output-onlinepngtools.png');
 }
-
-
-body::before {    
-    content: "";
-    background-image: url('./img/background.jpeg');
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.1;
-}
-
 
 img {
     position: fixed;
@@ -83,7 +70,8 @@ span#author {
     position: absolute;
     bottom: 5px;
     right: 5px;
-    font-size: 0.7em;
+    font-size: 1em;
+    color: aliceblue;
 }
 
 .number {
